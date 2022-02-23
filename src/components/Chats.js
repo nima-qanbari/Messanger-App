@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { ChatEngine } from 'react-chat-engine'
 
 //firebase
 import { auth } from '../firebase'
@@ -22,6 +23,12 @@ const Chats = () => {
   return (
     <div className={styles.container}>
         <Navbar logoutHandler={logoutHandler}/>
+        <ChatEngine 
+            height="calc(100vh - 50px)"
+            projectID="0b4dab96-d427-46af-846c-dbc40e949161"
+            userName="."
+            userSecret="."
+        />
     </div>
   )
 }
