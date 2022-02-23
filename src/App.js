@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
+import "./App.css"
 //components
 import Login from "./components/Login";
 import Chats from "./components/Chats";
@@ -10,7 +10,7 @@ import AuthContextProvider from "./Context/AuthContextProvider";
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <AuthContextProvider>
         <Routes>
           <Route path="/" element={<Login />} />
